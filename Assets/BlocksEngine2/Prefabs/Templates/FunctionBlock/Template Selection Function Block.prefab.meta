@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6fc519305c64ab51583eeedb1ecd0149
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/FunctionBlock/Template Selection
+    Function Block.prefab
+  uploadId: 765548

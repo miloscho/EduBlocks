@@ -1,0 +1,36 @@
+<linker>
+  <!--
+    Force IL2CPP to preserve all BlocksEngine2 runtime types and their interfaces.
+
+    Why: On Meta Quest (IL2CPP, managedStrippingLevel=Minimal), Unity strips
+    types that are only referenced via GetComponent<Interface>() or reflection.
+    BE2's block system reaches block implementations via I_BE2_Block and
+    I_BE2_Instruction interfaces, so without this file the types get stripped
+    at build time, GetComponent<I_BE2_Block>() returns null on device, and
+    BE2_UI_SelectionBlock.C_PerformCleanAndResize() spams NullReferenceException
+    from BE2_BlockUtils.BlockIsVariable() — which prevents the scene from
+    rendering anything.
+
+    Scripts in Assets/ compile into Assembly-CSharp by default, so that's the
+    assembly we need to preserve BE2 types from.
+  -->
+  <assembly fullname="Assembly-CSharp">
+    <type fullname="MG_BlocksEngine2.Block.I_BE2_Block" preserve="all" />
+    <type fullname="MG_BlocksEngine2.Block.BE2_Block" preserve="all" />
+    <type fullname="MG_BlocksEngine2.Block.Instruction.I_BE2_Instruction" preserve="all" />
+
+    <!-- Preserve entire BE2 namespaces so no implementation gets stripped -->
+    <namespace fullname="MG_BlocksEngine2.Block" preserve="all" />
+    <namespace fullname="MG_BlocksEngine2.Block.Instruction" preserve="all" />
+    <namespace fullname="MG_BlocksEngine2.Core" preserve="all" />
+    <namespace fullname="MG_BlocksEngine2.DragDrop" preserve="all" />
+    <namespace fullname="MG_BlocksEngine2.Environment" preserve="all" />
+    <namespace fullname="MG_BlocksEngine2.Serializer" preserve="all" />
+    <namespace fullname="MG_BlocksEngine2.UI" preserve="all" />
+    <namespace fullname="MG_BlocksEngine2.Utils" preserve="all" />
+    <namespace fullname="MG_BlocksEngine2.EditorScript" preserve="all" />
+  </assembly>
+
+  <!-- TextMeshPro (the tutorial uses TextMeshPro 3D — not the UGUI variant) -->
+  <assembly fullname="Unity.TextMeshPro" preserve="all" />
+</linker>

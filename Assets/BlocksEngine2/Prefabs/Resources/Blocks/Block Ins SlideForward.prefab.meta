@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4fc60897d85f3081e9e6b981d7f8f860
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins SlideForward.prefab
+  uploadId: 765548

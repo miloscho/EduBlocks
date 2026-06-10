@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cc30cffeec9a37804bcee7207930054d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Op JoystickKeyPressed.prefab
+  uploadId: 765548

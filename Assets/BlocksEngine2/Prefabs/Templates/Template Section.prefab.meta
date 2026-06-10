@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 75ed93926ad55f44887a598a57f175d1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/Template Section.prefab
+  uploadId: 765548

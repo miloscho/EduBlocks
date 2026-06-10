@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3e773326a17cdcb1f8220776b802512a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/DragDrop/BE2_SpotBlockBody.cs
+  uploadId: 765548

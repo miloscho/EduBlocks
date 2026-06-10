@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4c4133ae7aac2a2a8aef70991ffab03e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins InsertAtList.prefab
+  uploadId: 765548

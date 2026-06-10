@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5d19eb3c9a2970f148aa30791562b68e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Models/Blocks Engine 2 map.prefab
+  uploadId: 765548

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 48df32460640c9f71adb56a59cd09be1
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Sprites/Round/RoundTrigger.xcf
+  uploadId: 765548

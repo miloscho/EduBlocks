@@ -1,0 +1,69 @@
+<Block>
+  <blockName>Block Ins WhenPlayClicked</blockName>
+  <position>(198.74, -254.44, 0.00)</position>
+  <varManagerName></varManagerName>
+  <varName />
+  <defineID />
+  <isLocalVar />
+  <defineItems />
+  <sections>
+    <Section>
+      <childBlocks>
+        <Block>
+          <blockName>Block Ins MoveForward</blockName>
+          <position>(0.00, 10.00, 0.00)</position>
+          <varManagerName></varManagerName>
+          <varName />
+          <defineID />
+          <isLocalVar />
+          <defineItems />
+          <sections>
+            <Section>
+              <childBlocks />
+              <inputs>
+                <Input>
+                  <isOperation>true</isOperation>
+                  <value>0</value>
+                  <operation>
+                    <Block>
+                      <blockName>Block Op JoystickKeyPressed</blockName>
+                      <position>(-156.87, 30.00, 0.00)</position>
+                      <varManagerName></varManagerName>
+                      <varName />
+                      <defineID />
+                      <isLocalVar />
+                      <defineItems />
+                      <sections>
+                        <Section>
+                          <childBlocks />
+                          <inputs>
+                            <Input>
+                              <isOperation>false</isOperation>
+                              <value>Up</value>
+                            </Input>
+                          </inputs>
+                        </Section>
+                      </sections>
+                      <OuterArea>
+                        <childBlocks />
+                      </OuterArea>
+                    </Block>
+                  </operation>
+                </Input>
+              </inputs>
+            </Section>
+          </sections>
+          <OuterArea>
+            <childBlocks />
+          </OuterArea>
+        </Block>
+      </childBlocks>
+      <inputs />
+    </Section>
+  </sections>
+  <OuterArea>
+    <childBlocks />
+  </OuterArea>
+</Block>
+#
+

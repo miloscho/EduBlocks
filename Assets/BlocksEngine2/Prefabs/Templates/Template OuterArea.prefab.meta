@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ebd55810d2bff6e0281b7e63bb0775cd
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/Template OuterArea.prefab
+  uploadId: 765548

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2b93d48ddcfed19df9548082e4b61989
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/Template Header.prefab
+  uploadId: 765548

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a0dd17e90f4c865db8e862d01667ea6b
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Sprites/SelectionMenu.xcf
+  uploadId: 765548

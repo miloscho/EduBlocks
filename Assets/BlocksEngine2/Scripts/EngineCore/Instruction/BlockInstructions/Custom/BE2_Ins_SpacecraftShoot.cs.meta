@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cf7370ab96e452e7280cc02e0c375608
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/Custom/BE2_Ins_SpacecraftShoot.cs
+  uploadId: 765548

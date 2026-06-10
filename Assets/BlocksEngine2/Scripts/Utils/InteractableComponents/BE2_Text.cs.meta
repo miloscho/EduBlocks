@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0d4168f934e2a56f9a76e42b86ecb4e5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/Utils/InteractableComponents/BE2_Text.cs
+  uploadId: 765548

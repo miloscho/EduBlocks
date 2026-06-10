@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 950eed9f0042e65d7a40b8ae77a3b894
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/DragDrop/BE2_DragSelectionVariable.cs
+  uploadId: 765548

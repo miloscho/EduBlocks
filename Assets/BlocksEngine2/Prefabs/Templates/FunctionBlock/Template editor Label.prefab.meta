@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 354ef753ebc4bebc09d6aadcd232d464
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/FunctionBlock/Template editor
+    Label.prefab
+  uploadId: 765548

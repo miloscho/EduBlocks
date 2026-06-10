@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7e45c3eb03c1d75e8a3df4c59ee1c039
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Documentation/ChangeLog.md
+  uploadId: 765548

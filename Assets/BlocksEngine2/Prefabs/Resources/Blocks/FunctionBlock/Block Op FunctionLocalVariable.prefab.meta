@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d555e65631fe2dab99abfdec00b3a1ab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/FunctionBlock/Block Op
+    FunctionLocalVariable.prefab
+  uploadId: 765548

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 62ba8929c77e9b16b81394d769e476d9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/Template Dropdown.prefab
+  uploadId: 765548

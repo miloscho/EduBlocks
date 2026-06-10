@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3ed89d4c941f2f2a2a507417cb589108
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins WhenPlayClicked.prefab
+  uploadId: 765548

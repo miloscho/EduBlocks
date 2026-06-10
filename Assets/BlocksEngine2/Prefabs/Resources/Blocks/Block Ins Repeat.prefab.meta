@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5e27c165e1681d664943b4ea6757df52
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins Repeat.prefab
+  uploadId: 765548

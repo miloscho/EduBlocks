@@ -1,0 +1,235 @@
+using UnityEngine;
+using UnityEngine.UI;
+using MG_BlocksEngine2.DragDrop;
+
+/// <summary>
+/// Creates a properly-scaled world-space Canvas "tablet" that hosts all BE2 content.
+/// Reparents the BE2 Full Menu Root hierarchy under a single VR-friendly canvas
+/// WITHOUT overriding BE2's internal layout — the original desktop layout positions
+/// the block palette on the left (~480px wide at x=102) and the programming area
+/// on the right (at x=550, scale 0.364). We preserve those positions and just
+/// provide a 1920x1080 container at VR world scale.
+/// </summary>
+public class BE2_VRPanel : MonoBehaviour
+{
+    public static BE2_VRPanel Instance { get; private set; }
+
+    [Header("References")]
+    [Tooltip("BE2 Full Menu Root in the scene")]
+    [SerializeField] private Transform menuRoot;
+    [Tooltip("CenterEyeAnchor camera")]
+    [SerializeField] private Camera vrCamera;
+
+    [Header("Panel Settings")]
+    [SerializeField] private Vector2 panelPixelSize = new Vector2(1920, 1080);
+    [SerializeField] private float panelWorldScale = 0.00035f;
+    [SerializeField] private float titleBarHeight = 50f;
+
+    [Header("Detection")]
+    [SerializeField] private float vrDetectionDistance = 0.15f;
+
+    private Canvas _rootCanvas;
+    private RectTransform _canvasRect;
+    private GraphicRaycaster _raycaster;
+    private CanvasGroup _canvasGroup;
+
+    // --- Public API ---
+    public Canvas RootCanvas => _rootCanvas;
+    public Transform PanelTransform => _rootCanvas != null ? _rootCanvas.transform : null;
+    public RectTransform CanvasRectTransform => _canvasRect;
+    public CanvasGroup PanelCanvasGroup => _canvasGroup;
+    public bool IsVisible => _rootCanvas != null && _rootCanvas.gameObject.activeSelf;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void Start()
+    {
+        if (menuRoot == null || vrCamera == null)
+        {
+            Debug.LogError("BE2_VRPanel: menuRoot and vrCamera are required.", this);
+            enabled = false;
+            return;
+        }
+
+        BuildPanel();
+        ReparentBE2Content();
+        ConfigureChildCanvases();
+        RegisterRaycaster();
+        OverrideDetectionDistance();
+
+        // Start hidden — FloatingBE2Panel controls visibility
+        SetVisible(false);
+    }
+
+    // ------------------------------------------------------------------ Build
+    private void BuildPanel()
+    {
+        GameObject panelGO = new GameObject("BE2_VRPanelCanvas");
+
+        // Canvas
+        _rootCanvas = panelGO.AddComponent<Canvas>();
+        _rootCanvas.renderMode = RenderMode.WorldSpace;
+        _rootCanvas.worldCamera = vrCamera;
+        _rootCanvas.sortingOrder = 100;
+
+        _canvasRect = _rootCanvas.GetComponent<RectTransform>();
+        _canvasRect.sizeDelta = panelPixelSize;
+        _canvasRect.localScale = Vector3.one * panelWorldScale;
+
+        // Scaler — keep pixel sizes consistent
+        CanvasScaler scaler = panelGO.AddComponent<CanvasScaler>();
+        scaler.dynamicPixelsPerUnit = 1f;
+        scaler.referencePixelsPerUnit = 100f;
+
+        // Raycaster
+        _raycaster = panelGO.AddComponent<GraphicRaycaster>();
+
+        // CanvasGroup for alpha / interactable toggle
+        _canvasGroup = panelGO.AddComponent<CanvasGroup>();
+
+        // --- Background ---
+        CreateImage("Background", _canvasRect,
+            Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
+            new Color(0.05f, 0.05f, 0.1f, 0.92f));
+
+        // --- Title bar ---
+        GameObject titleGO = CreateImage("TitleBar", _canvasRect,
+            new Vector2(0, 1), Vector2.one,
+            new Vector2(0, -titleBarHeight), Vector2.zero,
+            new Color(0.08f, 0.08f, 0.16f, 0.95f));
+        RectTransform titleRect = titleGO.GetComponent<RectTransform>();
+        titleRect.pivot = new Vector2(0.5f, 1f);
+
+        // Grab-handle lines
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject line = new GameObject($"GrabLine_{i}");
+            line.transform.SetParent(titleRect, false);
+            RectTransform lr = line.AddComponent<RectTransform>();
+            lr.sizeDelta = new Vector2(50, 2);
+            lr.anchoredPosition = new Vector2(0, -(titleBarHeight * 0.35f) + i * -7f);
+            Image li = line.AddComponent<Image>();
+            li.color = new Color(1f, 1f, 1f, 0.3f);
+        }
+    }
+
+    // ------------------------------------------------ Reparent BE2 content
+    // KEY PRINCIPLE: Don't override BE2's internal canvas positions.
+    // The desktop layout already puts the palette on the left and programming
+    // area on the right. We just provide a correctly-sized 1920x1080 container
+    // and let BE2's original layout work as designed.
+    private void ReparentBE2Content()
+    {
+        // Reparent the entire BE2 Full Menu Root under our canvas
+        menuRoot.SetParent(_canvasRect, false);
+
+        // Ensure it has a RectTransform (it may be a plain Transform)
+        RectTransform rootRT = menuRoot.GetComponent<RectTransform>();
+        if (rootRT == null)
+            rootRT = menuRoot.gameObject.AddComponent<RectTransform>();
+
+        // Stretch to fill the canvas area below the title bar.
+        // This gives BE2 content a 1920x(1080-50) = 1920x1030 pixel area,
+        // which is close enough to a standard screen resolution for the
+        // original layout to work correctly.
+        rootRT.anchorMin = Vector2.zero;
+        rootRT.anchorMax = Vector2.one;
+        rootRT.offsetMin = Vector2.zero;
+        rootRT.offsetMax = new Vector2(0, -titleBarHeight);
+        rootRT.localScale = Vector3.one;
+        rootRT.localPosition = Vector3.zero;
+        rootRT.localRotation = Quaternion.identity;
+
+        // Hide Virtual Joystick canvas — not needed in VR
+        foreach (Transform child in menuRoot)
+        {
+            if (child.name.Contains("BE2") && child.name.Contains("Canvas"))
+            {
+                foreach (Transform grandchild in child)
+                {
+                    if (grandchild.name.Contains("Virtual Joystick"))
+                    {
+                        grandchild.gameObject.SetActive(false);
+                        break;
+                    }
+                }
+                break;
+            }
+        }
+    }
+
+    // ----------------------------------------- Configure child canvases
+    // Set all nested canvases to WorldSpace so BE2 code checking renderMode
+    // gets the correct value. Remove per-canvas raycasters since the root
+    // GraphicRaycaster handles all UI raycasting.
+    private void ConfigureChildCanvases()
+    {
+        Canvas[] allCanvases = _rootCanvas.GetComponentsInChildren<Canvas>(true);
+        foreach (Canvas c in allCanvases)
+        {
+            if (c == _rootCanvas) continue;
+
+            c.renderMode = RenderMode.WorldSpace;
+            c.worldCamera = vrCamera;
+
+            // Remove per-canvas raycasters — root handles all raycasting
+            GraphicRaycaster gr = c.GetComponent<GraphicRaycaster>();
+            if (gr != null) Destroy(gr);
+
+            OVRRaycaster ovr = c.GetComponent<OVRRaycaster>();
+            if (ovr != null) Destroy(ovr);
+        }
+    }
+
+    // ----------------------------------------- Raycaster registration
+    private void RegisterRaycaster()
+    {
+        BE2_Raycaster be2Raycaster = FindObjectOfType<BE2_Raycaster>();
+        if (be2Raycaster != null && _raycaster != null)
+        {
+            be2Raycaster.AddRaycaster(_raycaster);
+        }
+        else
+        {
+            Debug.LogWarning("BE2_VRPanel: Could not register raycaster — " +
+                "BE2_Raycaster not found in scene.", this);
+        }
+    }
+
+    // ----------------------------------------- Override detection distance
+    private void OverrideDetectionDistance()
+    {
+        BE2_DragDropManager ddm = BE2_DragDropManager.Instance;
+        if (ddm != null)
+        {
+            ddm.detectionDistance = vrDetectionDistance;
+        }
+    }
+
+    // ----------------------------------------- Visibility
+    public void SetVisible(bool visible)
+    {
+        if (_rootCanvas != null)
+            _rootCanvas.gameObject.SetActive(visible);
+    }
+
+    // ----------------------------------------- Helpers
+    private GameObject CreateImage(string name, Transform parent,
+        Vector2 anchorMin, Vector2 anchorMax,
+        Vector2 offsetMin, Vector2 offsetMax, Color color)
+    {
+        GameObject go = new GameObject(name);
+        go.transform.SetParent(parent, false);
+        RectTransform rt = go.AddComponent<RectTransform>();
+        rt.anchorMin = anchorMin;
+        rt.anchorMax = anchorMax;
+        rt.offsetMin = offsetMin;
+        rt.offsetMax = offsetMax;
+        Image img = go.AddComponent<Image>();
+        img.color = color;
+        return go;
+    }
+}

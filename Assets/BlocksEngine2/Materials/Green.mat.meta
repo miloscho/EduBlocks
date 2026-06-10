@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cc072a49989075d2b83d39582c5332e7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Materials/Green.mat
+  uploadId: 765548

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ab2a4eea3dd3ba84e99c3241bc2f02ad
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/HeaderItems/BE2_BlockSectionHeader_Dropdown.cs
+  uploadId: 765548

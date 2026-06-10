@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 48a9ccd1621b95e39b6a7da00e27e13d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Custom/Block Ins SpacecraftShoot.prefab
+  uploadId: 765548

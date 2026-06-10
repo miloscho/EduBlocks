@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1b70d00e58a8692edbc06b83e58c7a73
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins RemoveValueFromList.prefab
+  uploadId: 765548

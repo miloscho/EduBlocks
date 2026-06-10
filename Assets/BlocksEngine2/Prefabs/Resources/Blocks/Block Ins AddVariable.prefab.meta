@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bcdf9573f9de9ffa8b1059c548131cc3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins AddVariable.prefab
+  uploadId: 765548

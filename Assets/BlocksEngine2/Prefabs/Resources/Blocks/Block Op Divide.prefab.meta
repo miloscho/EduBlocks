@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8c510ac42de269f27a852829b21312fb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Op Divide.prefab
+  uploadId: 765548

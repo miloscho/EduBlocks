@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f307d7ef18b5cb99d938e5a20bf89309
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/EditorScripts/BE2_Inspector.cs
+  uploadId: 765548

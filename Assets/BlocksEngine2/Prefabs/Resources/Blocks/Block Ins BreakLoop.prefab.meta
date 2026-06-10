@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e119b6927ce02727585315f6cd5b223e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins BreakLoop.prefab
+  uploadId: 765548

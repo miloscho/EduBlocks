@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7f79fa1ff758df8f09d28f5b2924910e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/EngineCore/Core/FunctionBlock/BE2_FunctionBlocksManager.cs
+  uploadId: 765548

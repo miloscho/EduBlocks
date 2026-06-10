@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e44a733b760c1c4ea9b54718989d67c7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/Template Block Top.prefab
+  uploadId: 765548

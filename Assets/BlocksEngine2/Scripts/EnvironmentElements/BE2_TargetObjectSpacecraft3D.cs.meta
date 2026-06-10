@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f17686e7510436abe9dc5d8339c76ef8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/EnvironmentElements/BE2_TargetObjectSpacecraft3D.cs
+  uploadId: 765548

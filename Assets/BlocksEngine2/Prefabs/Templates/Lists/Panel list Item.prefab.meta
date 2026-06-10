@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e619590c6d6c1638f9f92bd430a74e15
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/Lists/Panel list Item.prefab
+  uploadId: 765548

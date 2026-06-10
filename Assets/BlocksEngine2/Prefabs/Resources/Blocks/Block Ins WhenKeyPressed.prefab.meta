@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 111a294f8addf9ccb82a49323fe6df1b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins WhenKeyPressed.prefab
+  uploadId: 765548

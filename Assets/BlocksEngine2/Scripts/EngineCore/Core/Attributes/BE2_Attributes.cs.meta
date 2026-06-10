@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4c01013800fcd8146923a501c5a1a221
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/EngineCore/Core/Attributes/BE2_Attributes.cs
+  uploadId: 765548

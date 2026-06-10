@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3eeba15b49b6919ef8c9336183000433
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Materials/Red.mat
+  uploadId: 765548

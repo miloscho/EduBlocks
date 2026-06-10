@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dee5b86501ce3945db4a2f323033e946
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Models/craft_speederA.prefab
+  uploadId: 765548

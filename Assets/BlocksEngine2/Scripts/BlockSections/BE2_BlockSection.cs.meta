@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 44b2577df6e6976469e4fd07054db179
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/BlockSections/BE2_BlockSection.cs
+  uploadId: 765548

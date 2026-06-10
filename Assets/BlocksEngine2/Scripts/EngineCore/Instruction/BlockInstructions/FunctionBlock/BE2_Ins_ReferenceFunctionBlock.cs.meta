@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6ee02951105b15844992e24fbefd62a3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/EngineCore/Instruction/BlockInstructions/FunctionBlock/BE2_Ins_ReferenceFunctionBlock.cs
+  uploadId: 765548

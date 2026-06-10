@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c4b103fc8e5b59e6e88dabdbc91020c4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/EnvironmentElements/I_BE2_ProgrammingEnv.cs
+  uploadId: 765548

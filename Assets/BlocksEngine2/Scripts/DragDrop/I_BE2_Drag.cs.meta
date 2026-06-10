@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 217b8bbc736efcb5982ccda0257e2c54
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Scripts/DragDrop/I_BE2_Drag.cs
+  uploadId: 765548

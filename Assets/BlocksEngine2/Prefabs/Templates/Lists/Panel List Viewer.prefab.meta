@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 595a5314da7f4a1af970190bc080b98a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/Lists/Panel List Viewer.prefab
+  uploadId: 765548

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b97ba709a30502ac1b7f986114439601
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/Template ToggleInput.prefab
+  uploadId: 765548

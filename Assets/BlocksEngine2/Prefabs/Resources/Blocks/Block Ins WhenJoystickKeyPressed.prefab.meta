@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b86770b0b7f45a26f99f467881683455
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins WhenJoystickKeyPressed.prefab
+  uploadId: 765548

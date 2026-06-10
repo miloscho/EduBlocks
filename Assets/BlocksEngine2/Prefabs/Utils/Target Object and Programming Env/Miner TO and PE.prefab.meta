@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 341b0a9135097a5c893457098aa36535
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Utils/Target Object and Programming Env/Miner
+    TO and PE.prefab
+  uploadId: 765548

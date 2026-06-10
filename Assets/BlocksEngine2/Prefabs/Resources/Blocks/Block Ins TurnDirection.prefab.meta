@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e18ff5dff8072c41b9b2413050166914
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Block Ins TurnDirection.prefab
+  uploadId: 765548

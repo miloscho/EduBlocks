@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cd0a343cdd90e83048d58b93738ae35c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Resources/Blocks/Custom/Block Cst LookAtAndMove.prefab
+  uploadId: 765548

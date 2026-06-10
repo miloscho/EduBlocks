@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eca0fd9cfa7542235b3de29e201ffd59
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201602
+  packageName: Blocks Engine 2
+  packageVersion: 2.13.4
+  assetPath: Assets/BlocksEngine2/Prefabs/Templates/FunctionBlock/Template Define
+    Op Local Variable.prefab
+  uploadId: 765548
